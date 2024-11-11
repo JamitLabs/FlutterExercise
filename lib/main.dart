@@ -16,7 +16,6 @@ class App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.blue,
         ),
-        useMaterial3: true,
       ),
       home: const HomePage(title: 'Flutter ToDo App'),
     );
