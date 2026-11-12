@@ -16,17 +16,22 @@ It uses simple Flutter concepts to build UI with widgets and demonstrate state m
     - Macos/Windows/Linux (depends on your system)
 - Start the example project
 
-## Tasks 
-This app is designed to be used with two tasks. 
-The starting point for the tasks is contained in the `home_page.dart` file which is automatically included in the `main.dart` file. 
+## Tasks
 
-### Task 1: Search
-Add a search bar to filter the todo items based on the search input.
+The starter app is built from [`lib/pages/home_page.dart`](lib/pages/home_page.dart) and [`lib/widgets/todo_item.dart`](lib/widgets/todo_item.dart). Complete the four tasks in order. The [`tips/`](tips/) folder has hints for each task.
 
-An example solution will be published shortly after the session. It can be found in the `home_page_task1_solution.dart`. Simply replace the import in `main.dart` with the corresponding solution file to use the solutions.
+### Task 1: ToDo item UI
 
+Display each ToDo item as a card and strike through its text when checked. [Read the hints](tips/task-1-todo-item-ui.md).
 
-### Task 2: Filter 
-Add a filter to filter the todo items based on the done state.
+### Task 2: Search
 
-An example solution will be published shortly after the session. It can be found in the `home_page_task2_solution.dart`. Simply replace the import in `main.dart` with the corresponding solution file to use the solutions.
+Add a search bar to filter ToDo items by the entered text. [Read the hints](tips/task-2-search.md).
+
+### Task 3: Filter
+
+Add a filter to show all, completed, or incomplete ToDo items. [Read the hints](tips/task-3-filter.md).
+
+### Task 4: Edit and delete
+
+Add ways to edit and delete a ToDo item. Decide how people will find and use these actions in the UI. [Read the hints](tips/task-4-edit-delete.md).

@@ -22,12 +22,6 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  void _removeToDo(int id) {
-    setState(() {
-      _todos.removeWhere((element) => element.id == id);
-    });
-  }
-
   void _changeIsDone(int id, bool isDone) {
     setState(() {
       final index = _todos.indexWhere((element) => element.id == id);
@@ -66,7 +60,6 @@ class _HomePageState extends State<HomePage> {
         final todo = _todos[index];
         return ToDoItem(
           todo: todo,
-          onDismissed: () => _removeToDo(todo.id),
           onIsDoneChanged: (isDone) => _changeIsDone(todo.id, isDone),
         );
       },
